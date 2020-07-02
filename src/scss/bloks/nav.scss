@@ -1,0 +1,97 @@
+.nav {
+	display: flex;
+
+	&__left {
+		display: flex;
+		flex-grow: 1;
+        align-items: center;
+        
+        @media (min-width: 1120px) {
+            display: none;
+        }
+	}
+	&__right {
+		display: flex;
+	}
+	&__divider-left {
+        display: none;
+
+        @media (min-width: 768px) {
+            display: block;
+            margin-right: 0;
+        }
+    }
+	&__logo {
+		display: flex;
+		margin-right: auto;
+        margin-left: 16px;
+        
+        @media (min-width: 768px) {
+            margin-left: 20px;
+        }
+	}
+	&__button-call {
+        display: none;
+        
+        @media (min-width: 768px) {
+            display: block;
+            background: url('../img/call.svg');
+            background-position: center;
+            background-repeat: no-repeat;
+        }
+	}
+	&__button-chat {
+        display: none;
+        
+        @media (min-width: 768px) {
+            display: block;
+            margin-left: 16px;
+            background: url('../img/chat.svg');
+            background-position: center;
+            background-repeat: no-repeat;
+        }
+	}
+	&__button-profile {
+        display: none;
+        
+        @media (min-width: 768px) {
+            display: block;
+            margin-left: 16px;
+            background: url('../img/profile.svg');
+            background-position: center;
+            background-repeat: no-repeat;
+        }
+	}
+	&__button-repair {
+		background: url('../img/repair.svg');
+		background-position: center;
+        background-repeat: no-repeat;
+        
+        @media (min-width: 1120px) {
+            margin-left: 9px;
+        }
+	}
+	&__button-status {
+		margin-left: 16px;
+		background: url('../img/checkstatus.svg');
+		background-position: center;
+        background-repeat: no-repeat;
+        
+        @media (min-width: 1120px) {
+            margin-left: 9px;
+        }
+	}
+	&__label-button {
+		display: flex;
+        align-items: center;
+        
+        @media (min-width: 1120px) {
+            margin-left: 16px;
+        }
+	}
+	&__button-burger {
+		background: url('../img/burger.svg');
+		background-repeat: no-repeat;
+		background-position: center;
+	}
+}

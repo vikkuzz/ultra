@@ -1,0 +1,16 @@
+.swiper-wrapper {
+    padding-top: 16px;
+    height: 110px;
+    flex-wrap: nowrap;
+
+    @media (min-width: 768px) {
+        display: flex;
+        flex-wrap: wrap;
+        height: 160px;
+        overflow: hidden;
+        padding-top: 24px;
+    }
+    &--height {
+        height: auto;
+    }
+}

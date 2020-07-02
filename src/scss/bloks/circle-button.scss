@@ -1,0 +1,19 @@
+.circle-button {
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+    background-color: $circle-button;
+
+    &:focus {
+        box-shadow: 0 0 0 2px $focus;
+    }
+    &:hover{
+        -webkit-animation: si-button-pulse 0.5s 0s ease-out 1;
+        -moz-animation: si-button-pulse 0.5s 0s ease-out 1;
+        animation: si-button-pulse 0.5s 0s ease-out 1;
+    }
+    @keyframes si-button-pulse {
+        from {box-shadow: 0 0 4px 3px $circle-button, 0 0 6px 7px $circle-button;}
+        to {box-shadow: 0 0 5px 2px $circle-button, 0 0 3px 3px $circle-button;}
+    }
+}

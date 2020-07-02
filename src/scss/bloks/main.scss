@@ -1,0 +1,52 @@
+.main {
+    display: flex;
+    flex-direction: column;
+    padding-left: 16px;
+    padding-right: 16px;
+
+    @media (min-width: 768px) {
+        padding-left: 24px;
+        padding-right: 24px;
+        width: 50%;
+    }
+    @media (min-width: 1120px) {
+        padding-left: 33px;
+        padding-right: 33px;
+    }
+    &__wrap-text {
+        height: 90px;
+        overflow: hidden;
+        transition: height 500ms ease;
+
+        @media (min-width: 768px) {
+            height: 160px;
+        }
+    }
+    &__text {
+        font-weight: 400;
+        font-size: 14px;
+        line-height: 18px;
+        color: $main-button;
+        letter-spacing: 0.2px;
+
+        @media (min-width: 768px) {
+            line-height: 20px;
+        }
+    }
+    &__button {
+        border-radius: 2px;
+        background-color: transparent;
+        width: 150px;
+        margin-top: 10px;
+        font-family: inherit;
+        font-weight: 500;
+        font-size: 16px;
+        line-height: 24px;
+    }
+    &__button:focus {
+        background-color: $white;
+    }    
+    &__button:hover {
+        animation: button-pulse 0.8s 0s ease-out 1;
+    }
+}

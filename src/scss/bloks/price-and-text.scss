@@ -1,0 +1,10 @@
+.price-and-text {
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-end;
+
+    @media (min-width: 768px) {
+        min-width: 100px;
+        justify-content: flex-start;
+    }
+}

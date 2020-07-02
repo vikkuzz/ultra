@@ -1,0 +1,18 @@
+.swiper-container3 {
+    background: $color-main;
+    min-width: 320px;
+    width: 100%;
+    position: relative;
+    overflow: hidden;
+    list-style: none;
+    padding: 0;
+    z-index: 1;
+    margin: 0 auto;
+    padding-left: 16px;
+
+    @media (min-width: 768px) {
+        box-sizing: border-box;
+        padding-left: 24px;
+        padding-right: 24px;
+    }
+}

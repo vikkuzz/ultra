@@ -1,0 +1,73 @@
+.card3 {
+    margin-right: 16px;
+    height: 200px;
+    display: flex;
+    flex-direction: column;
+    background-color: $white;
+    padding: 16px;
+    box-sizing: border-box;
+    border-radius: 6px;
+
+    @media (min-width: 768px) {
+        flex-direction: row;
+        height: 64px;
+        align-items: center;
+        margin-right: 24px;
+        padding-right: 16px;
+        padding-left: 16px;
+    }
+    &::before {
+        @media (min-width: 320px) {
+            display: none;
+        }
+        @media (min-width: 768px){
+            position: absolute;
+            display: flex;
+            flex-grow: 1;
+            content: "";
+            bottom: 0;
+            height: 1px;
+            width: 96%;
+            background: url('../img/Rectangle.svg');
+            background-repeat: repeat-x;
+        }
+
+
+    }
+    &__text-time {
+        margin-bottom: auto;
+
+        @media (min-width: 768px) {
+            flex-grow: 1;
+        }
+    }
+    &__text {
+        font-family: 'TTLakes';
+        font-weight: 400;
+        font-size: 14px;
+        line-height: 16px;
+        color: #7E7E82;
+        opacity: 0.72;
+
+        @media (min-width: 768px) {
+            display: none;
+        }
+    }
+    &__text-uslugi {
+        font-size: 14px;
+        line-height: 18px;
+        @media (min-width: 768px){
+            font-size: 14px;
+            line-height: 18px;
+            margin-right: auto;
+            min-width: 350px;
+            flex-grow: 1;
+        }
+    }
+    &__text-price {
+        display: flex;
+        min-width: 80px;
+        justify-content: flex-start;
+        flex-grow: 1;
+    }
+}

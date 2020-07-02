@@ -1,0 +1,16 @@
+.swiper-container {
+    background: $color-main;
+    min-width: 320px;
+    position: relative;
+    overflow: hidden;
+    list-style: none;
+    padding: 0;
+    z-index: 1;
+    margin: 0 auto;
+    padding-left: 16px;
+
+    @media (min-width: 768px) {
+        width: 100%;
+        padding-top: 16px;
+    }
+}

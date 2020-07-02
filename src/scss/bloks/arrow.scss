@@ -1,0 +1,11 @@
+.arrowUp::before {
+    content: '';
+    display: flex;
+    width: 24px;
+    height: 24px;
+    position: absolute;
+    background: url('../img/read-more.svg') no-repeat 50% 50%;
+    margin-right: 10px;
+    transform: rotate(180deg);
+    transition: ease 1s;
+}

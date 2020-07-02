@@ -1,0 +1,15 @@
+.read-more-button {
+    position: relative;
+    padding: 5px 0;
+    margin-bottom: 16px;
+
+    &::before {
+    content: '';
+    display: flex;
+    width: 24px;
+    height: 24px;
+    position: absolute;
+    background: url('../img/read-more.svg') no-repeat 50% 50%;
+    margin-right: 10px;
+    }
+}

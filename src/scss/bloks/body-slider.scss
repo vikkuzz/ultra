@@ -1,0 +1,58 @@
+.body-slyder {
+    background: $color-main;
+    overflow-x: hidden;
+    max-width: 1500px;
+    min-width: 320px;
+
+    &__read-more-button {
+        display: none;
+        @media (min-width: 768px) {
+            display: block;
+            position: relative;
+            padding: 5px 0;
+            margin: 16px;
+        }
+        &:focus {
+            background-color: white;
+        }    
+        &:hover {
+            animation: button-pulse 0.8s 0s ease-out 1;
+        }
+        &::before {
+            content: '';
+            display: flex;
+            width: 24px;
+            height: 24px;
+            position: absolute;
+            background: url('../img/read-more.svg') no-repeat 50% 50%;
+            margin-right: 10px;
+        }
+
+    }
+    &__read-more-button2 {
+        display: none;
+        @media (min-width: 768px) {
+            display: block;
+            position: relative;
+            padding: 5px 0;
+            margin: 16px;
+        }
+        &:focus {
+            background-color: white;
+        }    
+        &:hover {
+            animation: button-pulse 0.8s 0s ease-out 1;
+        }
+        &::before {
+            content: '';
+            display: flex;
+            width: 24px;
+            height: 24px;
+            position: absolute;
+            background: url('../img/read-more.svg') no-repeat 50% 50%;
+            margin-right: 10px;
+        }
+
+    }
+
+}

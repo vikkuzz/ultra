@@ -1,0 +1,28 @@
+.slide-button {
+    font-family: 'TTLakes';
+    font-size: 12px;
+    align-self: flex-end;
+    line-height: 24px;
+    letter-spacing: -0.15px;
+    text-transform: uppercase;
+    background: $circle-button url("../img/goside.svg");
+    background-position-x: 85px;
+    background-position-y: 4px;
+    background-repeat: no-repeat;
+    color: $white;
+    width: 119px;
+    height: 32px;
+    border-radius: 16px;
+    text-align: left;
+    padding-left: 12px;
+
+    &:hover {
+        -webkit-animation: si-button-pulse 0.5s 0s ease-out 1;
+        -moz-animation: si-button-pulse 0.5s 0s ease-out 1;
+        animation: si-button-pulse 0.5s 0s ease-out 1;
+    }
+    @keyframes si-button-pulse {
+        from {box-shadow: 0 0 4px 3px $circle-button, 0 0 6px 7px $circle-button;}
+        to {box-shadow: 0 0 5px 2px $circle-button, 0 0 3px 3px $circle-button;}
+    }
+}

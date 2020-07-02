@@ -1,0 +1,15 @@
+.underwrite {
+    margin: 16px;
+    font-family: 'TTLakes';
+    font-size: 14px;
+    line-height: 20px;
+    letter-spacing: 0.2px;
+    color: #1B1C21;
+    display: flex;
+    max-width: 421px;
+    flex-wrap: wrap;
+
+    @media (min-width: 768px) {
+        margin: 24px;
+    }
+}

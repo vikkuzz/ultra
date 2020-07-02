@@ -1,0 +1,10 @@
+.language-radio {
+    -webkit-appearance: none;
+    -moz-appearance: none;
+    -ms-appearance: none;
+    appearance: none;
+
+    &:checked ~ .radio__text {
+        color: $scroll-text;
+    }
+}
