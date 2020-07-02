@@ -5,6 +5,6 @@ import './slider2-init';
 import './slider-3';
 import './slider3-init';
 import './read-more';
-
+import './modal-left';
 
 console.log('Works!');
