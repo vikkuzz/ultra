@@ -2,31 +2,19 @@
     display: flex;
     padding: 18px 24px;
     width: auto;
-    height: 86px;
     justify-content: space-between;
     align-items: center;
 
     &__button-right {
         margin-left: auto;
-
-        &--icon {
-            margin: auto;
-            width: 20px;
-            height: 20px;
-            background-image: url('./img/iconFind.svg');
-            background-position: center;
-            background-repeat: no-repeat;
-        }
+        background-image: url('../img/iconFind.svg');
+        background-position: center;
+        background-repeat: no-repeat;
     }
     &__button-left{
-        
-        &--icon {
-            margin: auto;
-            width: 20px;
-            height: 20px;
-            background-image: url('./img/iconX.svg');
-            background-position: center;
-            background-repeat: no-repeat;
-        }
+        margin-right: 16px;
+        background-image: url('../img/iconX.svg');
+        background-position: center;
+        background-repeat: no-repeat;
     }
 }

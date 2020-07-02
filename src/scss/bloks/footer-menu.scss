@@ -2,41 +2,27 @@
     display: flex;
     flex-direction: column;
     justify-content: flex-end;
-    padding: 32px 24px;
+    padding: 32px 24px 0;
 
-    &__button-middle {
-        margin-right: 16px;
-
-        &--icon {
-            margin: auto;
-            width: 20px;
-            height: 20px;
-            background-image: url('./img/chat.svg');
-            background-position: center;
-            background-repeat: no-repeat;
-        }
+    @media (min-width: 768px) {
+        padding-bottom: 40px;
     }
     &__button-left {
         margin-right: 16px;
-
-        &--icon {
-            margin: auto;
-            width: 20px;
-            height: 20px;
-            background-image: url('./img/phone.svg');
-            background-position: center;
-            background-repeat: no-repeat;
-        }
+        background-image: url('../img/phone.svg');
+        background-position: center;
+        background-repeat: no-repeat;
     }
+    &__button-middle {
+        margin-right: 16px;
+        background-image: url('../img/chat.svg');
+        background-position: center;
+        background-repeat: no-repeat;
+    } 
     &__button-right {
-        &--icon{
-            margin: auto;
-            width: 20px;
-            height: 20px;
-            background-image: url('./img/profile.svg');
-            background-position: center;
-            background-repeat: no-repeat;
-        }
+        background-image: url('../img/profile.svg');
+        background-position: center;
+        background-repeat: no-repeat;   
     }
     &__buttons {
         margin-bottom: 16px;
@@ -44,7 +30,14 @@
     &__mail {
         margin-bottom: 12px;
     }
-    &__contacts {
-        margin-bottom: 40px;
+
+    &__languages {
+        display: flex;
+    }
+    &__phone {
+        font-size: 24px;
+        font-weight: 700;
+        line-height: 32px;
+        letter-spacing: -0.6px;
     }
 }
