@@ -365,7 +365,6 @@
 .body-slyder {
   background: #F8F8F8;
   overflow-x: hidden;
-  max-width: 1500px;
   min-width: 320px; }
   .body-slyder__read-more-button {
     display: none; }
