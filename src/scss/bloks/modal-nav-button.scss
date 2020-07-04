@@ -29,6 +29,10 @@
     &__text {
         margin-left: 16px;
         color: inherit;
+
+        @media (min-width: 360px) {
+            margin-left: 24px;
+        }
     }
 
     @keyframes button-pulse {

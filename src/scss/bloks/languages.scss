@@ -1,5 +1,9 @@
 .languages {
     display: flex;
     margin-left: 16px;
-    margin-bottom: 24px;
+    margin-bottom: 32px;
+
+    @media (min-width: 360px) {
+        margin-left: 24px;
+    }
 }

@@ -3,20 +3,16 @@ var modalLeft = document.querySelector('.left-side-menu');
 var buttonCloseMenu = document.querySelector('.header-menu__button-left');
 var menu = document.querySelector('.left-side');
 var body = document.querySelector('.body');
-var fon = document.querySelector('.fon');
+var heightBody = document.querySelector('.wrapp-body')
 
 buttonCloseMenu.addEventListener("click", function(){
     modalLeft.style.left = '-400px';
-    fon.style.position = 'static';
-    fon.style.height = '0';
-    body.style.height = '100%';
-    body.style.overflow = 'visible';
+    modalLeft.style.width = '0';
+    heightBody.classList.remove('wrapp-body-height');
 });
 
 buttonOpenMenu.addEventListener("click", function(){
     modalLeft.style.left = '0';
-    fon.style.position = 'absolute';
-    fon.style.height = '1024px';
-    body.style.height = '1024px';
-    body.style.overflow = 'hidden';
+    modalLeft.style.width = '100%';
+    heightBody.classList.add('wrapp-body-height');
 });

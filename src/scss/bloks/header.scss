@@ -1,6 +1,7 @@
 .header {
     display: flex;
     flex-direction: column;
+    background-color: $color-main;
 
     @media (min-width: 1120px) {
         flex-direction: row-reverse;

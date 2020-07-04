@@ -1,6 +1,10 @@
 .body {
     margin: 0 auto;
     font-family: 'TTLakes';
-    background-color: $color-main;
+    background-color: $white;
     height: 100%;
+
+    @media (min-width: 1366px) {
+        display: flex;
+    }
 }
