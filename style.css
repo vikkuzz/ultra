@@ -36,7 +36,8 @@
 .body {
   margin: 0 auto;
   font-family: 'TTLakes';
-  background-color: #F8F8F8; }
+  background-color: #F8F8F8;
+  height: 100%; }
 
 .header {
   display: flex;
@@ -814,96 +815,94 @@
     flex-wrap: nowrap; } }
 
 .left-side-menu {
-  display: none; }
+  position: absolute;
+  left: -400px;
+  z-index: 10;
+  min-height: 1024px;
+  transition: .3s;
+  width: 100%; }
 
-.left-side {
+.footer-menu {
   display: flex;
   flex-direction: column;
-  width: 320px;
-  height: 100%;
-  position: absolute;
-  top: 0;
-  left: 0;
-  overflow-y: auto;
-  background: #FFFFFF;
-  box-shadow: 16px 0px 52px rgba(14, 24, 80, 0.2), -2px 0px 4px rgba(69, 79, 126, 0.02); }
+  justify-content: flex-end;
+  padding: 10px 16px; }
+  @media (min-width: 768px) {
+    .footer-menu {
+      padding-bottom: 40px; } }
+  .footer-menu__button-left {
+    margin-right: 16px;
+    background-image: url(./static/phone.svg);
+    background-position: center;
+    background-repeat: no-repeat; }
+  .footer-menu__button-middle {
+    margin-right: 16px;
+    background-image: url(./static/chat.svg);
+    background-position: center;
+    background-repeat: no-repeat; }
+  .footer-menu__button-right {
+    background-image: url(./static/profile.svg);
+    background-position: center;
+    background-repeat: no-repeat; }
+  .footer-menu__buttons {
+    display: flex;
+    margin-bottom: 16px; }
+  .footer-menu__links {
+    display: flex;
+    flex-direction: column; }
+  .footer-menu__mail {
+    margin-bottom: 12px; }
+  .footer-menu__languages {
+    display: flex; }
 
-.left-menu-header {
+.header-menu {
   display: flex;
-  padding: 18px 24px;
+  height: 96px;
   width: auto;
-  height: 86px;
   justify-content: space-between;
   align-items: center; }
-  .left-menu-header__button-right {
-    margin-left: auto; }
-    .left-menu-header__button-right--icon {
-      margin: auto;
-      width: 20px;
-      height: 20px;
-      background-image: url(./static/iconFind.svg);
-      background-position: center;
-      background-repeat: no-repeat; }
-  .left-menu-header__button-left--icon {
-    margin: auto;
-    width: 20px;
-    height: 20px;
+  @media (min-width: 320px) {
+    .header-menu {
+      padding-left: 16px;
+      padding-right: 16px; } }
+  .header-menu__button-right {
+    margin-left: auto;
+    background-image: url(./static/iconFind.svg);
+    background-position: center;
+    background-repeat: no-repeat; }
+  .header-menu__button-left {
+    margin-right: 16px;
     background-image: url(./static/iconX.svg);
     background-position: center;
     background-repeat: no-repeat; }
 
-.text {
-  font-family: 'TTLakes', sans-serif;
-  font-style: normal;
-  font-weight: 500;
-  font-size: 16px;
-  line-height: 24px;
-  letter-spacing: -0.2px;
-  color: inherit; }
+.language-radio {
+  -webkit-appearance: none;
+  -moz-appearance: none;
+  appearance: none;
+  position: absolute; }
+  .language-radio:checked ~ .radio__text {
+    color: #7E7E82; }
 
-.left-menu-nav {
+.languages {
+  display: flex;
+  margin-left: 16px;
+  margin-bottom: 24px; }
+
+.left-side {
   display: flex;
   flex-direction: column;
-  justify-content: flex-start;
-  padding: 24px 0;
-  flex-grow: 1; }
-
-.footer-left-menu {
-  display: flex;
-  flex-direction: column;
-  justify-content: flex-end;
-  padding: 32px 24px; }
-  .footer-left-menu__button-left {
-    margin-right: 16px; }
-    .footer-left-menu__button-left--icon {
-      margin: auto;
-      width: 20px;
-      height: 20px;
-      background-image: url(./static/phone.svg);
-      background-position: center;
-      background-repeat: no-repeat; }
-  .footer-left-menu__button-middle {
-    margin-right: 16px; }
-    .footer-left-menu__button-middle--icon {
-      margin: auto;
-      width: 20px;
-      height: 20px;
-      background-image: url(./static/chat.svg);
-      background-position: center;
-      background-repeat: no-repeat; }
-  .footer-left-menu__button-right--icon {
-    margin: auto;
-    width: 20px;
-    height: 20px;
-    background-image: url(./static/profile.svg);
-    background-position: center;
-    background-repeat: no-repeat; }
-  .footer-left-menu__buttons {
-    margin-bottom: 16px; }
-  .footer-left-menu__mail {
-    margin-bottom: 12px; }
-  .footer-left-menu__contacts {
-    margin-bottom: 40px; }
+  min-width: 320px;
+  max-width: 360px;
+  width: 100%;
+  min-height: 676px;
+  position: absolute;
+  background-color: #FFFFFF;
+  top: 0;
+  left: 0;
+  z-index: 100;
+  background: #FFFFFF;
+  box-shadow: 16px 0px 52px rgba(14, 24, 80, 0.2), -2px 0px 4px rgba(69, 79, 126, 0.02); }
 
 .link-left-menu {
   text-decoration: none; }
@@ -915,15 +914,70 @@
   letter-spacing: -0.6px;
   color: #1B1C21; }
 
-.language {
-  display: flex; }
-
-.language-radio {
-  -webkit-appearance: none;
-  -moz-appearance: none;
-  appearance: none; }
-  .language-radio:checked ~ .radio__text {
+.modal-nav-button {
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+  background: #FFFFFF;
+  padding: 5px 0;
+  border-radius: 5px;
+  margin-bottom: 12px;
+  transition: box-shadow 0.5s linear; }
+  .modal-nav-button:hover {
+    box-shadow: none;
+    -webkit-animation: button-pulse 0.8s 0s ease-out 1;
+    animation: button-pulse 0.8s 0s ease-out 1;
     color: #7E7E82; }
+  .modal-nav-button:focus::before {
+    content: url(./static/highlight.svg);
+    position: absolute;
+    left: 0; }
+  .modal-nav-button:focus {
+    color: #7E7E82;
+    -webkit-animation: button-pulse 0.8s 0s ease-out 1;
+    animation: button-pulse 0.8s 0s ease-out 1; }
+  .modal-nav-button__text {
+    margin-left: 16px;
+    color: inherit; }
+
+@-webkit-keyframes button-pulse {
+  from {
+    box-shadow: 0 0 4px 3px #D9FFF5, 0 0 6px 3px #D9FFF5 inset; }
+  to {
+    box-shadow: 0 0 5px 2px rgba(255, 48, 26, 0), 0 0 5px 3px rgba(255, 48, 26, 0) inset; } }
+
+@keyframes button-pulse {
+  from {
+    box-shadow: 0 0 4px 3px #D9FFF5, 0 0 6px 3px #D9FFF5 inset; }
+  to {
+    box-shadow: 0 0 5px 2px rgba(255, 48, 26, 0), 0 0 5px 3px rgba(255, 48, 26, 0) inset; } }
+
+.nav-left-side {
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  flex-grow: 1; }
+
+.radio {
+  margin-right: 7px; }
+
+.text {
+  font-family: 'TTLakes', sans-serif;
+  font-style: normal;
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 24px;
+  letter-spacing: -0.2px;
+  color: inherit; }
+
+.fon {
+  display: flex;
+  width: 100%;
+  min-height: 100%;
+  height: 100%;
+  opacity: 0.9;
+  background-color: #FFFFFF;
+  z-index: 9; }
 
 
 /*# sourceMappingURL=style.css.map*/
