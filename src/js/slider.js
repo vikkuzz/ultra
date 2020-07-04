@@ -1,46 +1,46 @@
 var arrOfLabels = [
   {
-    imgUrl: './img/lenovo.png',
+    imgUrl: '../img/lenovo.png',
     text: 'lenovo',
   },
   {
-    imgUrl: './img/samsung.png',
+    imgUrl: '../img/samsung.png',
     text: 'samsung',
   },
   {
-    imgUrl: './img/apple.png',
+    imgUrl: '../img/apple.png',
     text: 'apple',
   },
   {
-    imgUrl: './img/viewsonic.png',
+    imgUrl: '../img/viewsonic.png',
     text: 'viewsonic',
   },
   {
-    imgUrl: './img/bosch.png',
+    imgUrl: '../img/bosch.png',
     text: 'bosch',
   },
   {
-    imgUrl: './img/hp.png',
+    imgUrl: '../img/hp.png',
     text: 'hp',
   },
   {
-    imgUrl: './img/acer.png',
+    imgUrl: '../img/acer.png',
     text: 'acer',
   },
   {
-    imgUrl: './img/sony.png',
+    imgUrl: '../img/sony.png',
     text: 'sony',
   },
   {
-    imgUrl: './img/lenovo.png',
+    imgUrl: '../img/lenovo.png',
     text: 'lenovo',
   },
   {
-    imgUrl: './img/samsung.png',
+    imgUrl: '../img/samsung.png',
     text: 'samsung',
   },
   {
-    imgUrl: './img/apple.png',
+    imgUrl: '../img/apple.png',
     text: 'apple',
   }
 ];
