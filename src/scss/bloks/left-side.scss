@@ -1,7 +1,10 @@
 .left-side {
     display: flex;
     flex-direction: column;
-    width: 320px;
+    min-width: 320px;
+    max-width: 360px;
+    width: 100%;
+    min-height: 676px;
     position: absolute;
     background-color: $white;
     top: 0;
@@ -10,7 +13,5 @@
     background: $white;
     box-shadow: 16px 0px 52px rgba(14, 24, 80, 0.2), -2px 0px 4px rgba(69, 79, 126, 0.02);
 
-    @media (min-width: 320px) {
-        height: 676px;
-    }
+
 }

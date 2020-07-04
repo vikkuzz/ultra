@@ -2,7 +2,7 @@
     display: flex;
     flex-direction: column;
     justify-content: flex-end;
-    padding: 32px 24px 0;
+    padding: 10px 16px;
 
     @media (min-width: 768px) {
         padding-bottom: 40px;
@@ -25,7 +25,12 @@
         background-repeat: no-repeat;   
     }
     &__buttons {
+        display: flex;
         margin-bottom: 16px;
+    }
+    &__links {
+        display: flex;
+        flex-direction: column;
     }
     &__mail {
         margin-bottom: 12px;

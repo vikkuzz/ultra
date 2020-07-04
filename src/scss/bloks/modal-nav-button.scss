@@ -3,7 +3,7 @@
     justify-content: flex-start;
     align-items: center;
     background: $white;
-    padding: 10px 0;
+    padding: 5px 0;
     border-radius: 5px;
     margin-bottom: 12px;
     transition: box-shadow 0.5s linear;
@@ -27,7 +27,7 @@
         animation: button-pulse 0.8s 0s ease-out 1;
     }
     &__text {
-        margin-left: 24px;
+        margin-left: 16px;
         color: inherit;
     }
 
