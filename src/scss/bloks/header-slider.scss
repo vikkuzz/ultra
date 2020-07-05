@@ -2,9 +2,16 @@
     display: flex;
     align-items: center;
     border-top: 1px solid $border;
-    height: 80px;
     background: linear-gradient(270deg, $color-main 0%, $white 98.61%);
-    padding-left: 16px;
+    padding: 16px;
+    
+
+    @media (min-width: 768px) {
+        padding-left: 24px;
+    }
+    @media (min-width: 1366px) {
+        padding-left: 32px;
+    }
 
     &__title {
         font-family: 'TTLakes';

@@ -5,14 +5,18 @@ var menu = document.querySelector('.left-side');
 var body = document.querySelector('.body');
 var heightBody = document.querySelector('.wrapp-body')
 
-buttonCloseMenu.addEventListener("click", function(){
-    modalLeft.style.left = '-400px';
-    modalLeft.style.width = '0';
-    heightBody.classList.remove('wrapp-body-height');
-});
+var closeMenu = function(className){
+    modalLeft.style.display = 'none';
+}
 
-buttonOpenMenu.addEventListener("click", function(){
-    modalLeft.style.left = '0';
-    modalLeft.style.width = '100%';
+buttonOpenMenu.onclick = function() {
+    modalLeft.style.display = "block";
     heightBody.classList.add('wrapp-body-height');
-});
+    modalLeft.classList.remove('closed-menu');
+}
+
+buttonCloseMenu.onclick = function() {
+    heightBody.classList.remove('wrapp-body-height');
+    modalLeft.classList.add('closed-menu');
+    setTimeout(closeMenu, 300);
+}

@@ -1,12 +1,9 @@
 .wrapp-body-height {
     @media (min-width: 320px) {
-        height: 676px;
+        height: 100vh;
         overflow: hidden;
         position: fixed;
         opacity: 0.1;
         width: 100%;
-    }
-    @media (min-width: 768px) {
-        height: 1024px;
     }
 }
