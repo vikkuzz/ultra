@@ -1,0 +1,25 @@
+.button-send {
+    font-family: 'TTLakes';
+    font-size: 12px;
+    align-self: flex-end;
+    line-height: 24px;
+    letter-spacing: -0.15px;
+    text-transform: uppercase;
+    background: $circle-button url("../img/goside.svg");
+    background-position-x: 85px;
+    background-position-y: 4px;
+    background-repeat: no-repeat;
+    color: $white;
+    width: 119px;
+    height: 32px;
+    border-radius: 16px;
+    text-align: left;
+    padding-left: 12px;
+    margin-top: 23px;
+    margin-bottom: 23px;
+    margin-right: 16px;
+
+    @media (min-width: 540px) {
+        margin-right: 32px;
+    }
+}

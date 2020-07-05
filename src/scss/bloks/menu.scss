@@ -1,0 +1,31 @@
+.menu {
+    font-family: 'TTLakes';
+    display: flex;
+    flex-direction: column;
+    box-sizing: border-box;
+    min-width: 320px;
+    width: 440px;
+    height: 100vh;
+    box-shadow: 16px 0px 52px rgba(14, 24, 80, 0.2), -2px 0px 4px rgba(69, 79, 126, 0.02);
+    min-height: 676px;
+    padding-top: 24px;
+    
+    @media (min-width: 540px) {
+        padding-top: 40px;
+    }
+
+    &__close-button {
+        margin-left: 16px;
+        margin-bottom: 32px;
+        width: 40px;
+        height: 40px;
+        background-image: url('../img/iconX.svg');
+        background-repeat: no-repeat;
+        background-position: center;
+
+        @media (min-width: 540px) {
+        position: absolute;
+        right: 470px;
+        }
+    }
+}
