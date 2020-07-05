@@ -20,3 +20,10 @@ buttonCloseMenu.onclick = function() {
     modalLeft.classList.add('closed-menu');
     setTimeout(closeMenu, 300);
 }
+modalLeft.addEventListener('click', function (e) {
+    if (!menu.contains(e.target) && !buttonCloseMenu.contains(e.target)) {
+        heightBody.classList.remove('wrapp-body-height');
+        modalLeft.classList.add('closed-menu');
+        setTimeout(closeMenu, 300);
+    }
+});

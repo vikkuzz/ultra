@@ -2,6 +2,7 @@
     display: none;
     position: absolute;
     left: 0;
+    width: 100%;
     top: 0;
     z-index: 10;
     transition: .3s;
@@ -12,5 +13,6 @@
         display: block;
         left: 0;
         top: 0;
+        width: 320px;
     }
 }
