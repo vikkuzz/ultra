@@ -46,7 +46,8 @@
 .header {
   display: flex;
   flex-direction: column;
-  background-color: #F8F8F8; }
+  background-color: #F8F8F8;
+  position: relative; }
   @media (min-width: 1366px) {
     .header {
       flex-direction: row-reverse;
@@ -81,6 +82,14 @@
         display: flex;
         padding-left: 32px;
         align-items: flex-end; } }
+    .header__title::before {
+      content: "";
+      position: absolute;
+      left: 0;
+      bottom: 0;
+      background: url(./static/highlight.svg);
+      width: 4px;
+      height: 40px; }
 
 .divider {
   background-color: #EAEAEA;
@@ -178,13 +187,6 @@
 
 .h1 {
   margin-bottom: 0; }
-  .h1::before {
-    content: "";
-    position: absolute;
-    left: 0;
-    background: url(./static/highlight.svg);
-    width: 4px;
-    height: 40px; }
 
 .circle-button {
   width: 40px;
@@ -835,6 +837,7 @@
   display: none;
   position: absolute;
   left: 0;
+  width: 100%;
   top: 0;
   z-index: 10;
   transition: .3s;
@@ -844,7 +847,8 @@
       position: relative;
       display: block;
       left: 0;
-      top: 0; } }
+      top: 0;
+      width: 320px; } }
 
 .footer-menu {
   display: flex;
