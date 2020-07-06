@@ -1,6 +1,6 @@
-var buttonOpenMenu = document.querySelector('.nav__button-call');
-var modalLeft = document.querySelector('.wrap-call');
-var buttonCloseMenu = document.querySelector('.close-button');
+var buttonOpenMenu = document.querySelector('.nav__button-chat');
+var modalLeft = document.querySelector('.wrap-menu');
+var buttonCloseMenu = document.querySelector('.menu__close-button');
 var menu = document.querySelector('.menu');
 var heightBody = document.querySelector('.wrapp-body')
 
