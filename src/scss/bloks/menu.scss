@@ -35,6 +35,28 @@
         width: 440px;
     }
 
+    &__h1 {
+        position: relative;
+        font-size: 24px;
+        line-height: 32px;
+        padding-left: 16px;
+    
+        @media (min-width: 1366px) {
+            padding-left: 32px;
+        }
+        &::before {
+            content: '';
+            position: absolute;
+            left: 0;
+            width: 4px;
+            height: 32px;
+            background-image: url(../img/highlight.svg);
+        }
+    
+        
+    }
+    
+
     &__close-button {
         margin-left: 16px;
         margin-bottom: 24px;

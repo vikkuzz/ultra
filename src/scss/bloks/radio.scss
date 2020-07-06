@@ -1,3 +1,16 @@
 .radio {
     margin-right: 7px;
+
+    &__language {
+        -webkit-appearance: none;
+        -moz-appearance: none;
+        -ms-appearance: none;
+        appearance: none;
+        position: absolute;
+    
+        &:checked ~ .radio__text {
+            color: $scroll-text;
+        }
+        
+    }
 }

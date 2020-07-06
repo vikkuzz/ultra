@@ -10,6 +10,15 @@
     @media (min-width: 768px) {
         padding-bottom: 40px;
     }
+    &__languages {
+        display: flex;
+        margin-left: 16px;
+        margin-bottom: 32px;
+    
+        @media (min-width: 360px) {
+            margin-left: 24px;
+        }
+    }
     &__button-left {
         margin-right: 16px;
         background-image: url('../img/phone.svg');
