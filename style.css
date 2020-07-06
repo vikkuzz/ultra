@@ -945,14 +945,14 @@
   z-index: 100;
   background: #FFFFFF;
   box-shadow: 16px 0px 52px rgba(14, 24, 80, 0.2), -2px 0px 4px rgba(69, 79, 126, 0.02);
-  -webkit-animation-name: animatemenu;
+  -webkit-animation-name: animate;
   -webkit-animation-duration: 0.4s;
-  animation-name: animatemenu;
+  animation-name: animate;
   animation-duration: 0.4s;
   -webkit-animation-delay: 2;
           animation-delay: 2; }
 
-@-webkit-keyframes animatemenu {
+@-webkit-keyframes animate {
   from {
     left: -400px;
     opacity: 0; }
@@ -960,7 +960,7 @@
     left: 0;
     opacity: 1; } }
 
-@keyframes animatemenu {
+@keyframes animate {
   from {
     left: -400px;
     opacity: 0; }
@@ -1080,6 +1080,169 @@
   to {
     left: -400px;
     opacity: 0; } }
+
+a {
+  text-decoration: none; }
+
+.input-message {
+  height: 118px;
+  resize: none; }
+
+.input {
+  background: #FFFFFF;
+  border: 1px solid #EAEAEA;
+  border-radius: 8px;
+  height: 48px;
+  padding-left: 16px;
+  box-sizing: border-box;
+  margin: 12px 16px; }
+  @media (min-width: 1366px) {
+    .input {
+      margin: 8px 32px; } }
+  .input::-webkit-input-placeholder {
+    font-family: 'TTLakes';
+    font-size: 16px;
+    font-weight: 500;
+    line-height: 24px;
+    letter-spacing: -0.2px;
+    color: #B5B6BC; }
+  .input::-moz-placeholder {
+    font-family: 'TTLakes';
+    font-size: 16px;
+    font-weight: 500;
+    line-height: 24px;
+    letter-spacing: -0.2px;
+    color: #B5B6BC; }
+  .input:-ms-input-placeholder {
+    font-family: 'TTLakes';
+    font-size: 16px;
+    font-weight: 500;
+    line-height: 24px;
+    letter-spacing: -0.2px;
+    color: #B5B6BC; }
+  .input::placeholder {
+    font-family: 'TTLakes';
+    font-size: 16px;
+    font-weight: 500;
+    line-height: 24px;
+    letter-spacing: -0.2px;
+    color: #B5B6BC; }
+
+.menu {
+  font-family: 'TTLakes';
+  position: absolute;
+  display: flex;
+  flex-direction: column;
+  box-sizing: border-box;
+  width: 320px;
+  height: 100%;
+  box-shadow: 16px 0px 52px rgba(14, 24, 80, 0.2), -2px 0px 4px rgba(69, 79, 126, 0.02);
+  min-height: 676px;
+  padding-top: 24px;
+  background-color: #FFFFFF;
+  top: 0;
+  right: 0;
+  z-index: 100;
+  -webkit-animation-name: animatemenu;
+  -webkit-animation-duration: 0.4s;
+  animation-name: animatemenu;
+  animation-duration: 0.4s; }
+
+@-webkit-keyframes animatemenu {
+  from {
+    right: -400px;
+    opacity: 0; }
+  to {
+    right: 0;
+    opacity: 1; } }
+
+@keyframes animatemenu {
+  from {
+    right: -400px;
+    opacity: 0; }
+  to {
+    right: 0;
+    opacity: 1; } }
+  @media (min-width: 1366px) {
+    .menu {
+      padding-top: 40px;
+      width: 440px; } }
+  .menu__close-button {
+    margin-left: 16px;
+    margin-bottom: 24px;
+    width: 40px;
+    height: 40px;
+    background-image: url(./static/iconX.svg);
+    background-repeat: no-repeat;
+    background-position: center; }
+    @media (min-width: 1366px) {
+      .menu__close-button {
+        position: absolute;
+        right: 470px; } }
+
+.wrap-menu {
+  display: none;
+  position: absolute;
+  right: 0;
+  top: 0;
+  z-index: 10;
+  transition: 0.3s;
+  justify-content: flex-end;
+  width: 100%;
+  height: 100vh;
+  overflow-y: auto; }
+
+.soglasie {
+  font-size: 14px;
+  line-height: 16px;
+  color: #7E7E82;
+  margin: 8px 16px; }
+  @media (min-width: 540px) {
+    .soglasie {
+      padding: 8px 32px; } }
+
+.link {
+  color: #FF3E79; }
+
+.button-send {
+  font-family: 'TTLakes';
+  font-size: 12px;
+  align-self: flex-end;
+  line-height: 24px;
+  letter-spacing: -0.15px;
+  text-transform: uppercase;
+  background: #FF3E79 url(./static/goside.svg);
+  background-position-x: 85px;
+  background-position-y: 4px;
+  background-repeat: no-repeat;
+  color: #FFFFFF;
+  width: 119px;
+  height: 32px;
+  border-radius: 16px;
+  text-align: left;
+  padding-left: 12px;
+  margin-top: 23px;
+  margin-bottom: 23px;
+  margin-right: 16px; }
+  @media (min-width: 540px) {
+    .button-send {
+      margin-right: 32px; } }
+
+.menu-h1 {
+  position: relative;
+  font-size: 24px;
+  line-height: 32px;
+  padding-left: 16px; }
+  @media (min-width: 1366px) {
+    .menu-h1 {
+      padding-left: 32px; } }
+  .menu-h1::before {
+    content: '';
+    position: absolute;
+    left: 0;
+    width: 4px;
+    height: 32px;
+    background-image: url(./static/highlight.svg); }
 
 
 /*# sourceMappingURL=style.css.map*/
