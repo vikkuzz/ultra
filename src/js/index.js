@@ -6,5 +6,6 @@ import './slider-3';
 import './slider3-init';
 import './read-more';
 import './modal-left';
+import './modal-call';
 
 console.log('Works!');
