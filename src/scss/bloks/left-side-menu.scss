@@ -1,8 +1,7 @@
 .left-side-menu {
-    display: none;
     position: absolute;
-    left: 0;
-    width: 100%;
+    left: -400px;
+    width: auto;
     top: 0;
     z-index: 10;
     transition: .3s;

@@ -1,10 +1,11 @@
 var buttonOpenMenu = document.querySelector('.nav__button-call');
 var modalLeft = document.querySelector('.wrap-call');
 var buttonCloseMenu = document.querySelector('.close-button');
-var menu = document.querySelector('.menu');
-var heightBody = document.querySelector('.wrapp-body')
+var menu = document.querySelector('.wrap-call__menu');
+var heightBody = document.querySelector('.wrapp-body');
 
-var closeMenu = function(className){
+
+var closeMenu = function(className) {
     modalLeft.style.display = 'none';
 }
 
@@ -26,3 +27,4 @@ modalLeft.addEventListener('click', function (e) {
         setTimeout(closeMenu, 300);
     }
 });
+

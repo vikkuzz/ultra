@@ -6,4 +6,8 @@
         opacity: 0.1;
         width: 100%;
     }
+    @media (min-width: 1366px) {
+        position: relative;
+        opacity: 1;
+    }
 }

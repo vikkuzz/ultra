@@ -13,21 +13,6 @@
     z-index: 100;
     background: $white;
     box-shadow: 16px 0px 52px rgba(14, 24, 80, 0.2), -2px 0px 4px rgba(69, 79, 126, 0.02);
-    -webkit-animation-name: animate;
-    -webkit-animation-duration: 0.4s;
-    animation-name: animate;
-    animation-duration: 0.4s;
-    animation-delay: 2;
-
-    @-webkit-keyframes animate {
-        from {left:-400px; opacity:0} 
-        to {left:0; opacity:1}
-    }
-    
-    @keyframes animate {
-        from {left:-400px; opacity:0} 
-        to {left:0; opacity:1}
-    }
 
     @media (min-width: 768px) {
         width: 320px;

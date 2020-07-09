@@ -1,0 +1,13 @@
+.left-side-menu-hide {
+    position: absolute;
+    top: 0;
+    transform: translateX(-400px);
+    transition: all 0.4s;
+    opacity: 0;
+
+    @media (min-width: 1366px) {
+        position: relative;
+        transform: none;
+        opacity: 1;
+    }
+}
