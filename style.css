@@ -38,7 +38,7 @@
   font-family: 'TTLakes';
   background-color: #FFFFFF;
   height: 100%;
-  max-width: 1920px; }
+  max-width: 1700px; }
   @media (min-width: 1366px) {
     .body {
       display: flex; } }
@@ -1028,7 +1028,7 @@
 
 .wrapp-body {
   background-color: #F8F8F8;
-  max-width: 1600px; }
+  max-width: 1380px; }
 
 @media (min-width: 320px) {
   .wrapp-body-height {
