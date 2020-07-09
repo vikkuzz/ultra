@@ -22,4 +22,150 @@
         position: static;
         box-shadow: none;
     }
+
+    &__header {
+        display: flex;
+        height: 96px;
+        width: auto;
+        justify-content: space-between;
+        align-items: center;
+    
+        @media (min-width: 320px) {
+            padding-left: 16px;
+            padding-right: 16px;
+        }
+        @media (min-width: 360px) {
+            padding-left: 24px;
+            padding-right: 24px;
+        }
+    }
+    &__button-right {
+        margin-left: auto;
+        background-image: url('../img/iconFind.svg');
+        background-position: center;
+        background-repeat: no-repeat;
+    }
+    &__button-left{
+        margin-right: 16px;
+        background-image: url('../img/iconX.svg');
+        background-position: center;
+        background-repeat: no-repeat;
+
+        @media (min-width: 1366px) {
+            display: none;
+        }
+    }
+    &__nav {
+        display: flex;
+        flex-direction: column;
+        justify-content: flex-start;
+        flex-grow: 1;
+    
+        @media (min-width: 320px) {
+    
+        }
+    }
+    &__button {
+        display: flex;
+        justify-content: flex-start;
+        align-items: center;
+        background: $white;
+        padding: 5px 0;
+        border-radius: 5px;
+        margin-bottom: 12px;
+        transition: box-shadow 0.5s linear;
+    
+        &:hover {
+            box-shadow: none;
+            -webkit-animation: button-pulse 0.8s 0s ease-out 1;
+            -moz-animation: button-pulse 0.8s 0s ease-out 1;
+            animation: button-pulse 0.8s 0s ease-out 1;
+            color: $scroll-text;
+        }
+        &:focus::before {
+            content: url('../img/highlight.svg');
+            position: absolute;
+            left: 0;
+        }
+        &:focus {
+            color: $scroll-text;
+            -webkit-animation: button-pulse 0.8s 0s ease-out 1;
+            -moz-animation: button-pulse 0.8s 0s ease-out 1;
+            animation: button-pulse 0.8s 0s ease-out 1;
+        }
+        @keyframes button-pulse {
+            from {box-shadow: 0 0 4px 3px $border, 0 0 6px 3px $border inset;}
+            to {box-shadow: 0 0 5px 2px rgba(255, 48, 26, 0), 0 0 5px 3px rgba(255, 48, 26, 0) inset;}
+        }
+    }
+    &__text {
+        margin-left: 16px;
+        color: inherit;
+
+        @media (min-width: 360px) {
+            margin-left: 24px;
+        }
+    }
+
+    &__footer {
+        display: flex;
+        flex-direction: column;
+        justify-content: flex-end;
+        padding: 10px 16px;
+    
+        @media (min-width: 360px) {
+            padding-left: 24px;
+        }
+        @media (min-width: 768px) {
+            padding-bottom: 40px;
+        }
+    }
+    &__languages {
+        display: flex;
+        margin-left: 16px;
+        margin-bottom: 32px;
+    
+        @media (min-width: 360px) {
+            margin-left: 24px;
+        }
+    }
+    &__button-call {
+        margin-right: 16px;
+        background-image: url('../img/phone.svg');
+        background-position: center;
+        background-repeat: no-repeat;
+    }
+    &__button-middle {
+        margin-right: 16px;
+        background-image: url('../img/chat.svg');
+        background-position: center;
+        background-repeat: no-repeat;
+    } 
+    &__button-profile {
+        background-image: url('../img/profile.svg');
+        background-position: center;
+        background-repeat: no-repeat;   
+    }
+    &__buttons {
+        display: flex;
+        margin-bottom: 16px;
+    }
+    &__links {
+        display: flex;
+        flex-direction: column;
+    }
+    &__mail {
+        margin-bottom: 12px;
+    }
+
+    &__languages {
+        display: flex;
+    }   
+    &__link-phone {
+        font-size: 24px;
+        font-weight: 700;
+        line-height: 32px;
+        letter-spacing: -0.6px;
+        color: $main-button;
+    } 
 }

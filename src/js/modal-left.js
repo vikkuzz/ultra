@@ -1,6 +1,6 @@
 var buttonOpenMenu = document.querySelector('.nav__button-burger');
 var modalLeft = document.querySelector('.left-side-menu');
-var buttonCloseMenu = document.querySelector('.header-menu__button-left');
+var buttonCloseMenu = document.querySelector('.left-side__button-left');
 var menu = document.querySelector('.left-side');
 var heightBody = document.querySelector('.wrapp-body')
 

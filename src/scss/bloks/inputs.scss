@@ -1,4 +1,6 @@
 .inputs {
+    display: flex;
+    flex-direction: column;
 
     &__message {
         height: 118px;

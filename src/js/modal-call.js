@@ -1,4 +1,4 @@
-    var modalCall = document.querySelector('.footer-menu__button-left');
+    var modalCall = document.querySelector('.left-side__button-call');
     var buttonOpenMenu = document.querySelector('.nav__button-call');
     var modal = document.querySelector('.wrap-call');
     var buttonCloseMenu = document.querySelector('.close-button');

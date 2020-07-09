@@ -1,4 +1,4 @@
-var modalChat = document.querySelector('.footer-menu__button-middle');
+var modalChat = document.querySelector('.left-side__button-middle');
 var buttonOpenMenu = document.querySelector('.nav__button-chat');
 var modal = document.querySelector('.wrap-menu');
 var buttonCloseMenu = document.querySelector('.menu__close-button');
