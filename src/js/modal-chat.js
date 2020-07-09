@@ -1,14 +1,20 @@
+var modalLeftChat = document.querySelector('.footer-menu__button-middle');
 var buttonOpenMenu = document.querySelector('.nav__button-chat');
 var modalLeft = document.querySelector('.wrap-menu');
 var buttonCloseMenu = document.querySelector('.menu__close-button');
 var menu = document.querySelector('.menu');
-var heightBody = document.querySelector('.wrapp-body')
+var heightBody = document.querySelector('.wrapp-body');
 
 var closeMenu = function(className){
     modalLeft.style.display = 'none';
 }
 
 buttonOpenMenu.onclick = function() {
+    modalLeft.style.display = "flex";
+    heightBody.classList.add('wrapp-body-height');
+    modalLeft.classList.remove('closed-menu');
+}
+modalLeftChat.onclick = function() {
     modalLeft.style.display = "flex";
     heightBody.classList.add('wrapp-body-height');
     modalLeft.classList.remove('closed-menu');
