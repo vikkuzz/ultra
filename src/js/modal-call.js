@@ -1,36 +1,39 @@
-    var modalLeftCall = document.querySelector('.footer-menu__button-left');
+    var modalCall = document.querySelector('.footer-menu__button-left');
     var buttonOpenMenu = document.querySelector('.nav__button-call');
-    var modalLeft = document.querySelector('.wrap-call');
+    var modal = document.querySelector('.wrap-call');
     var buttonCloseMenu = document.querySelector('.close-button');
     var menu = document.querySelector('.wrap-call__menu');
     var heightBody = document.querySelector('.wrapp-body');
-
+    var modalLeft = document.querySelector('.left-side-menu');
 
     var closeMenu = function(className) {
-        modalLeft.style.display = 'none';
+        modal.style.display = 'none';
     }
 
     buttonOpenMenu.onclick = function() {
-        modalLeft.style.display = "flex";
+        modal.style.display = "flex";
         heightBody.classList.add('wrapp-body-height');
-        modalLeft.classList.remove('closed-menu');
+        modal.classList.remove('closed-menu');
     }
-    modalLeftCall.onclick = function() {
-        modalLeft.style.display = "flex";
+    modalCall.onclick = function() {
+        modal.style.display = "flex";
         heightBody.classList.add('wrapp-body-height');
-        modalLeft.classList.remove('closed-menu');
+        modal.classList.remove('closed-menu');
+        modalLeft.classList.add('left-side-menu-hide');
+        modalLeft.classList.remove('left-side-menu-open');
+
     }
 
 
     buttonCloseMenu.onclick = function() {
         heightBody.classList.remove('wrapp-body-height');
-        modalLeft.classList.add('closed-menu');
+        modal.classList.add('closed-menu');
         setTimeout(closeMenu, 300);
     }
-    modalLeft.addEventListener('click', function (e) {
+    modal.addEventListener('click', function (e) {
         if (!menu.contains(e.target) && !buttonCloseMenu.contains(e.target)) {
             heightBody.classList.remove('wrapp-body-height');
-            modalLeft.classList.add('closed-menu');
+            modal.classList.add('closed-menu');
             setTimeout(closeMenu, 300);
         }
     });
