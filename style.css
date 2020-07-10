@@ -90,6 +90,8 @@
       background: url(./static/highlight.svg);
       width: 4px;
       height: 40px; }
+  .header__h1 {
+    margin-bottom: 0; }
 
 .divider {
   background-color: #EAEAEA;
@@ -172,21 +174,11 @@
     background: url(./static/burger.svg);
     background-repeat: no-repeat;
     background-position: center; }
-
-.repair {
-  display: none; }
-  @media (min-width: 1366px) {
-    .repair {
-      display: inline-block; } }
-
-.status {
-  display: none; }
-  @media (min-width: 1366px) {
-    .status {
-      display: inline-block; } }
-
-.h1 {
-  margin-bottom: 0; }
+  .nav__margin-span {
+    display: none; }
+    @media (min-width: 1366px) {
+      .nav__margin-span {
+        display: inline-block; } }
 
 .circle-button {
   width: 40px;
@@ -266,10 +258,9 @@
       .container__foto {
         border-radius: 4px;
         width: 50%; } }
-
-.scroll-menu {
-  display: flex; }
-  .scroll-menu__button {
+  .container__menu {
+    display: flex; }
+  .container__button {
     font-family: inherit;
     font-weight: 500;
     padding: 8px 16px;
@@ -283,9 +274,9 @@
     margin-right: 2px;
     margin-bottom: 8px;
     border-radius: 2px; }
-  .scroll-menu__button:focus {
+  .container__button:focus {
     background-color: white; }
-  .scroll-menu__button:hover {
+  .container__button:hover {
     background-color: white; }
 
 .main {
@@ -1020,13 +1011,6 @@
   letter-spacing: -0.2px;
   color: inherit; }
 
-.fon {
-  display: flex;
-  width: 100%;
-  opacity: 0.9;
-  background-color: #FFFFFF;
-  z-index: 9; }
-
 .wrapp-body {
   background-color: #F8F8F8;
   max-width: 1380px; }
@@ -1290,6 +1274,18 @@ a {
       width: 4px;
       height: 32px;
       background-image: url(./static/highlight.svg); }
+  .wrap-call__close-button {
+    margin-left: 16px;
+    margin-bottom: 24px;
+    width: 40px;
+    height: 40px;
+    background-image: url(./static/iconX.svg);
+    background-repeat: no-repeat;
+    background-position: center; }
+    @media (min-width: 1366px) {
+      .wrap-call__close-button {
+        position: absolute;
+        right: 470px; } }
 
 .open-modal {
   display: flex; }
