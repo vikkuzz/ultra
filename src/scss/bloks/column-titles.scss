@@ -25,4 +25,25 @@
         color: #7E7E82;
         opacity: 0.72;
     }
+    &__wrap {
+        display: flex;
+        height: 64px;
+        width: 100%;
+        align-items: center;
+        box-sizing: border-box;
+        padding-right: 16px;
+        padding-left: 16px;
+    }
+    &__uslugi {
+        min-width: 350px;
+        margin-right: auto;
+    }
+    &__time {
+        min-width: 225px;
+    }
+    &__price {
+        display: flex;
+        min-width: 80px;
+        justify-content: flex-start;
+    }
 }

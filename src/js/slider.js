@@ -64,7 +64,7 @@ var createArrCard = function (pictures) {
       var clonedElement = element.cloneNode(false);
       swiper.appendChild(clonedElement); 
   }
-  var labels = document.querySelectorAll('.card');
+  var labels = document.querySelectorAll('.body-slyder__card');
   return labels;
 };
 

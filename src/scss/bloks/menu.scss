@@ -71,4 +71,14 @@
         right: 470px;
         }
     }
+    &__soglasie {
+        font-size: 14px;
+        line-height: 16px;
+        color: $scroll-text;
+        margin: 8px 16px;
+    
+        @media (min-width: 540px) {
+            padding: 8px 32px;
+        }
+    }
 }

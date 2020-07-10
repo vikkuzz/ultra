@@ -15,4 +15,26 @@
         padding-left: 24px;
         padding-right: 24px;
     }
+
+    &__price-and-btn {
+        display: flex;
+        flex-wrap: nowrap;
+        justify-content: space-between;
+        margin-top: auto;
+    
+        @media (min-width: 768px) {
+            align-items: center;
+            flex-grow: 1;
+        }
+    }
+    &__price-and-text {
+        display: flex;
+        flex-direction: column;
+        justify-content: flex-end;
+    
+        @media (min-width: 768px) {
+            min-width: 100px;
+            justify-content: flex-start;
+        }
+    }
 }

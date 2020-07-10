@@ -53,5 +53,75 @@
         }
 
     }
-
+    &__header {
+        display: flex;
+        align-items: center;
+        border-top: 1px solid $border;
+        background: linear-gradient(270deg, $color-main 0%, $white 98.61%);
+        padding: 16px;
+        
+    
+        @media (min-width: 768px) {
+            padding-left: 24px;
+        }
+        @media (min-width: 1366px) {
+            padding-left: 32px;
+        }
+    }
+    &__title {
+        font-family: 'TTLakes';
+        font-weight: 400;
+        font-size: 16px;
+        line-height: 24px;
+        letter-spacing: -0.2px;
+        text-transform: uppercase;
+        color: $scroll-text;
+    }
+    &__card {
+        display: flex;
+        align-items: center;
+        height: 72px;
+        background: $white url('../img/go.svg');
+        background-position: right 16px bottom 16px;
+        background-repeat: no-repeat;
+        border: 1px solid $divider;
+        box-sizing: border-box;
+        border-radius: 6px;
+        padding-left: 16px;
+        margin-right: 16px;
+    
+        @media (min-width: 768px) {
+            margin-bottom: 16px;
+            margin-right: 24px;
+            width: 224px;
+        }
+        @media (min-width: 1366px) {
+            margin-right: 32px;
+            width: 240px;
+        }
+    }
+    &__card2 {
+        display: flex;
+        width: 240px;
+        height: 160px;
+        background: $white url('../img/go.svg');
+        background-position: right 16px bottom 16px;
+        background-repeat: no-repeat;
+        border: 1px solid $divider;
+        box-sizing: border-box;
+        border-radius: 6px;
+        padding: 16px 16px;
+        margin-right: 16px;
+    
+        @media (min-width: 768px) {
+            margin-right: 24px;
+            margin-bottom: 24px;
+            width: 224px;
+        }
+        @media (min-width: 1366px) {
+            margin-bottom:  32px;
+            margin-right: 32px;
+            width: 240px;
+        }
+    }
 }

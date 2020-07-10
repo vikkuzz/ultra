@@ -13,4 +13,12 @@
     @media (min-width: 768px) {
         padding-left: 24px;
     }
+
+    &__paginator {
+        position: relative;
+        margin-top: 16px;
+        @media (min-width: 768px){
+            display: none;
+        }
+    }
 }

@@ -72,7 +72,7 @@
                     <input type="email" class="body__input inputs__mail" placeholder="Электронная почта">
                     <textarea class="body__input inputs__message" placeholder="Сообщение"></textarea>
                 </div>
-                <div class="soglasie">
+                <div class="menu__soglasie">
                    Нажимая “отправить”, вы даете согласие на <a href="#" class="link">обработку персональных данных</a> и соглашаетесь с нашей <a href="#" class="link link-confidentional">политикой конфиденциальности</a>
                 </div>
     
@@ -90,7 +90,7 @@
                 <div class="inputs">
                     <input type="tel" class="body__input inputs__phone" placeholder="Телефон">
                 </div>
-                <div class="soglasie">
+                <div class="wrap-call__soglasie">
                    Нажимая “отправить”, вы даете согласие на <a href="#" class="link">обработку персональных данных</a> и соглашаетесь с нашей <a href="#" class="link link-confidentional">политикой конфиденциальности</a>
                 </div>
     
@@ -151,7 +151,7 @@
                                 Lorem ipsum, dolor sit amet consectetur adipisicing elit. Aperiam deserunt atque accusamus nisi, laboriosam odit, quas, nulla quia fugit perferendis quos eius a rerum incidunt eum similique libero porro. Consequatur.
                             </div>
                         </div>
-                        <button class="read-more-button main__button body__button">Читать далее</button>
+                        <button class="main__button body__button">Читать далее</button>
                     </div>
                     <figure class="container__foto">
                         <img class="container__img" src="img/CPS.jpg" alt="">
@@ -159,78 +159,80 @@
                 </div>
             </section>
             <div class="body-slyder">
-            <header class="header-slider">
-                <span class="header-slider__title">Ремонт техники различных брендов</span>
-            </header>
-            <div class="swiper-container" data-mobile="false">
-                <div class="swiper-wrapper"></div>
-                <div class="swiper-pagination"></div>
-            </div>
-            <template class="slide">
-                <div class="swiper-slide card"></div>
-            </template>
-            <button class="body-slyder__read-more-button main__button body__button">Показать всё</button>    
+                <header class="body-slyder__header">
+                    <span class="body-slyder__title">Ремонт техники различных брендов</span>
+                </header>
+                <div class="swiper-container" data-mobile="false">
+                    <div class="swiper-wrapper"></div>
+                    <div class="swiper-pagination"></div>
+                </div>
+                <template class="slide">
+                    <div class="swiper-slide body-slyder__card"></div>
+                </template>
+                <button class="body-slyder__read-more-button main__button body__button">Показать всё</button>    
 
-            <header class="header-slider">
-                <span class="header-slider__title">Ремонт различных видов техники</span>
-            </header>
-            <div class="swiper-container2" data-mobile="false">
-                <div class="swiper-wrapper swiper-wrapper2"></div>
-                <div class="swiper-pagination paginator"></div>
-            </div>
-            <template class="slide2">
-                <div class="swiper-slide card2"></div>
-            </template>
-            <button class="body-slyder__read-more-button2 main__button body__button">Показать всё</button>    
-        
-            <header class="header-slider">
-                <span class="header-slider__title">Цены на услуги</span>
-            </header>
-            <div class="column-titles">
-                <div class="wrap-column-titles">
-                    <span class="title-uslugi column-titles__text">Ремонтные услуги</span>
-                    <span class="title-price column-titles__text">Цена</span>
-                    <span class="title-time column-titles__text">Срок</span>
+                <header class="body-slyder__header">
+                    <span class="body-slyder__title">Ремонт различных видов техники</span>
+                </header>
+                <div class="swiper-container2" data-mobile="false">
+                    <div class="swiper-wrapper swiper-wrapper2"></div>
+                    <div class="swiper-pagination swiper-container2__paginator"></div>
                 </div>
-            </div>
-      
-            <div class="swiper-container3" data-mobile="false">
-                <div class="swiper-wrapper swiper-wrapper3"></div>
-                <div class="swiper-pagination"></div>
-            </div>
-            <div class="underwrite">
-                Все цены указаны с учетом НДС. Стоимость ремонта указана на единичную услугу. Для получения коммерческого предложения на постоянное обслуживание, оставьте заявку.
-            </div>
-            <div class="wrap-link">
-                <a href="#" class="link link-predlozhenie">Получить коммерческое предложение</a>
-            </div>
-            <div class="footer">
-                <div class="footer__text">
-                    <span>© 2019 CPS</span>
-                    <span>Разработано командой Apesong</span>
-                </div>
-                <div class="footer__text">
-                    Политика конфиденциальности
-                </div>
-                <div class="infopage footer__text">
-                    Информация, размещенная на данной странице, не является публичной офертой
-                </div>
-            </div>
-            <template class="slide3">
-                <div class="swiper-slide card3">
-                    <span class="text-uslugi card3__text">Ремонтные услуги</span>
-                    <span class="card3__text-uslugi slide-text"></span>
-                    <span class="text-price card3__text">Цена</span>
-                    <span class="card3__text-price slide-text"></span>
-                    <div class="price-and-btn">
-                        <div class="price-and-text">
-                            <span class="text-time card3__text">Срок</span>
-                            <span class="card3__text-time slide-text"></span>
-                        </div>
-                        <button class="slide-button body__button">Заказать</button>
+                <template class="slide2">
+                    <div class="swiper-slide body-slyder__card2"></div>
+                </template>
+                <button class="body-slyder__read-more-button2 main__button body__button">Показать всё</button>    
+            
+                <header class="body-slyder__header">
+                    <span class="body-slyder__title">Цены на услуги</span>
+                </header>
+                <div class="column-titles">
+                    <div class="column-titles__wrap">
+                        <span class="column-titles__uslugi column-titles__text">Ремонтные услуги</span>
+                        <span class="column-titles__price column-titles__text">Цена</span>
+                        <span class="column-titles__time column-titles__text">Срок</span>
                     </div>
                 </div>
-            </template>
+      
+                <div class="swiper-container3" data-mobile="false">
+                    <div class="swiper-wrapper swiper-wrapper3"></div>
+                    <div class="swiper-pagination"></div>
+                </div>
+                <div class="body__underwrite">
+                    Все цены указаны с учетом НДС. Стоимость ремонта указана на единичную услугу. Для получения коммерческого предложения на постоянное обслуживание, оставьте заявку.
+                </div>
+                <div class="body__wrap-link">
+                    <a href="#" class="link body__link-predlozhenie">Получить коммерческое предложение</a>
+                </div>
+                
+                <div class="footer">
+                    <div class="footer__text">
+                        <span>© 2019 CPS</span>
+                        <span>Разработано командой Apesong</span>
+                    </div>
+                    <div class="footer__text">
+                        Политика конфиденциальности
+                    </div>
+                    <div class="infopage footer__text">
+                        Информация, размещенная на данной странице, не является публичной офертой
+                    </div>
+                </div>
+                <template class="slide3">
+                    <div class="swiper-slide card3">
+                        <span class="text-uslugi card3__text">Ремонтные услуги</span>
+                        <span class="card3__text-uslugi slide-text"></span>
+                        <span class="text-price card3__text">Цена</span>
+                        <span class="card3__text-price slide-text"></span>
+                        <div class="swiper-container3__price-and-btn">
+                            <div class="swiper-container3__price-and-text">
+                                <span class="text-time card3__text">Срок</span>
+                                <span class="card3__text-time slide-text"></span>
+                            </div>
+                            <button class="slide-button body__button">Заказать</button>
+                        </div>
+                    </div>
+                </template>
+            </div>
         </div>
     </body>
 </html>

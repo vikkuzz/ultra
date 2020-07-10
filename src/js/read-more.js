@@ -1,6 +1,6 @@
 var wrapp = document.querySelector('.main__wrap-text');
 var height = wrapp.style.height;
-var buttonViewAll = document.querySelector('.read-more-button');
+var buttonViewAll = document.querySelector('.main__button');
 
 var isTextShow = true;
 buttonViewAll.addEventListener("click", function() {

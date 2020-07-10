@@ -53,7 +53,7 @@ var arrOfText = [
         var clonedElement = element.cloneNode(false);
         swiper2.appendChild(clonedElement); 
     }
-    var arrCards = document.querySelectorAll('.card2');
+    var arrCards = document.querySelectorAll('.body-slyder__card2');
     return arrCards;
   };
   
