@@ -15,11 +15,21 @@
 	}
 	&__divider-left {
         display: none;
+        background-color: $divider;
+        width: 2px;
+        height: 32px;
+        margin: 0 20px;
 
         @media (min-width: 768px) {
             display: block;
             margin-right: 0;
         }
+    }
+    &__divider-right {
+        background-color: $divider;
+        width: 2px;
+        height: 32px;
+        margin: 0 20px;
     }
 	&__logo {
 		display: flex;

@@ -1,6 +1,16 @@
 .radio {
     margin-right: 7px;
 
+    &__text {
+        font-family: 'TTLakes', sans-serif;
+        font-style: normal;
+        font-weight: 500;
+        font-size: 16px;
+        line-height: 24px;
+        letter-spacing: -0.2px;
+        color: inherit;
+    }
+
     &__language {
         -webkit-appearance: none;
         -moz-appearance: none;
