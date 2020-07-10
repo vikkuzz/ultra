@@ -1,7 +1,7 @@
     var modalCall = document.querySelector('.left-side__button-call');
     var buttonOpenMenu = document.querySelector('.nav__button-call');
     var modal = document.querySelector('.wrap-call');
-    var buttonCloseMenu = document.querySelector('.close-button');
+    var buttonCloseMenu = document.querySelector('.wrap-call__close-button');
     var menu = document.querySelector('.wrap-call__menu');
     var heightBody = document.querySelector('.wrapp-body');
     var modalLeft = document.querySelector('.left-side-menu');

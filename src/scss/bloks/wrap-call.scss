@@ -66,4 +66,18 @@
              background-image: url(../img/highlight.svg);
         }    
     }
+    &__close-button {
+        margin-left: 16px;
+        margin-bottom: 24px;
+        width: 40px;
+        height: 40px;
+        background-image: url('../img/iconX.svg');
+        background-repeat: no-repeat;
+        background-position: center;
+
+        @media (min-width: 1366px) {
+        position: absolute;
+        right: 470px;
+        }
+    }
 }

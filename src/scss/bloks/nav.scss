@@ -93,5 +93,12 @@
 		background: url('../img/burger.svg');
 		background-repeat: no-repeat;
 		background-position: center;
-	}
+    }
+    &__margin-span {
+        display: none;
+    
+        @media (min-width: 1366px) {
+            display: inline-block;
+        }
+    }
 }
